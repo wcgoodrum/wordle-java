@@ -1,4 +1,4 @@
-# Homework 3 - Wordle GUI
+# Homework 5 - Wordle GUI
 
 ## Authors
 
