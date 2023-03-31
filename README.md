@@ -3,5 +3,5 @@
 ## Authors
 
 * Tammy Ngo - bsy6pq
-* Chai Zhang - zdc4tp
 * Will Goodrum - wcg9ev
+* Suraj Chhahira - sc9ugn
