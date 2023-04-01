@@ -8,12 +8,12 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="420.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <TextArea editable="false" layoutX="95.0" layoutY="-12.0" prefHeight="74.0" prefWidth="229.0" style="-fx-border-color: white; -fx-background-color: white;" text="Wordle">
+      <TextArea editable="false" layoutX="95.0" layoutY="-12.0" prefHeight="58.0" prefWidth="229.0" style="-fx-border-color: white; -fx-background-color: white;" text="Wordle">
          <font>
             <Font name="Times New Roman Bold" size="48.0" />
          </font>
       </TextArea>
-      <TextField alignment="CENTER" layoutX="50.0" layoutY="69.0" prefHeight="74.0" prefWidth="64.0">
+      <TextField fx:id="firstWord1" alignment="CENTER" layoutX="50.0" layoutY="69.0" prefHeight="74.0" prefWidth="64.0">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
@@ -21,7 +21,7 @@
             <Font name="Arial Bold" size="24.0" />
          </font>
       </TextField>
-      <TextField alignment="CENTER" layoutX="114.0" layoutY="69.0" prefHeight="74.0" prefWidth="64.0">
+      <TextField fx:id="firstWord2" alignment="CENTER" layoutX="114.0" layoutY="69.0" prefHeight="74.0" prefWidth="64.0">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
@@ -29,7 +29,7 @@
             <Font name="Arial Bold" size="24.0" />
          </font>
       </TextField>
-      <TextField alignment="CENTER" layoutX="178.0" layoutY="69.0" prefHeight="74.0" prefWidth="64.0">
+      <TextField fx:id="firstWord3" alignment="CENTER" layoutX="178.0" layoutY="69.0" prefHeight="74.0" prefWidth="64.0">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
@@ -37,7 +37,7 @@
             <Font name="Arial Bold" size="24.0" />
          </font>
       </TextField>
-      <TextField alignment="CENTER" layoutX="242.0" layoutY="69.0" prefHeight="74.0" prefWidth="64.0">
+      <TextField fx:id="firstWord4" alignment="CENTER" layoutX="242.0" layoutY="69.0" prefHeight="74.0" prefWidth="64.0">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
@@ -45,7 +45,7 @@
             <Font name="Arial Bold" size="24.0" />
          </font>
       </TextField>
-      <TextField alignment="CENTER" layoutX="306.0" layoutY="69.0" prefHeight="74.0" prefWidth="64.0">
+      <TextField fx:id="firstWord5" alignment="CENTER" layoutX="306.0" layoutY="69.0" prefHeight="74.0" prefWidth="64.0">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
@@ -53,7 +53,7 @@
             <Font name="Arial Bold" size="24.0" />
          </font>
       </TextField>
-      <TextField alignment="CENTER" layoutX="50.0" layoutY="150.0" prefHeight="74.0" prefWidth="64.0">
+      <TextField fx:id="secondWord1" alignment="CENTER" layoutX="50.0" layoutY="150.0" prefHeight="74.0" prefWidth="64.0">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
@@ -61,7 +61,7 @@
             <Font name="Arial Bold" size="24.0" />
          </font>
       </TextField>
-      <TextField alignment="CENTER" layoutX="114.0" layoutY="150.0" prefHeight="74.0" prefWidth="64.0">
+      <TextField fx:id="secondWord2" alignment="CENTER" layoutX="114.0" layoutY="150.0" prefHeight="74.0" prefWidth="64.0">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
@@ -69,7 +69,7 @@
             <Font name="Arial Bold" size="24.0" />
          </font>
       </TextField>
-      <TextField alignment="CENTER" layoutX="178.0" layoutY="150.0" prefHeight="74.0" prefWidth="64.0">
+      <TextField fx:id="secondWord3" alignment="CENTER" layoutX="178.0" layoutY="150.0" prefHeight="74.0" prefWidth="64.0">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
@@ -77,7 +77,7 @@
             <Font name="Arial Bold" size="24.0" />
          </font>
       </TextField>
-      <TextField alignment="CENTER" layoutX="242.0" layoutY="150.0" prefHeight="74.0" prefWidth="64.0">
+      <TextField fx:id="secondWord4" alignment="CENTER" layoutX="242.0" layoutY="150.0" prefHeight="74.0" prefWidth="64.0">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
@@ -85,7 +85,7 @@
             <Font name="Arial Bold" size="24.0" />
          </font>
       </TextField>
-      <TextField alignment="CENTER" layoutX="306.0" layoutY="150.0" prefHeight="74.0" prefWidth="64.0">
+      <TextField fx:id="secondWord5" alignment="CENTER" layoutX="306.0" layoutY="150.0" prefHeight="74.0" prefWidth="64.0">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
@@ -93,7 +93,7 @@
             <Font name="Arial Bold" size="24.0" />
          </font>
       </TextField>
-      <TextField alignment="CENTER" layoutX="51.0" layoutY="230.0" prefHeight="74.0" prefWidth="64.0">
+      <TextField fx:id="thirdWord1" alignment="CENTER" layoutX="51.0" layoutY="230.0" prefHeight="74.0" prefWidth="64.0">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
@@ -101,7 +101,7 @@
             <Font name="Arial Bold" size="24.0" />
          </font>
       </TextField>
-      <TextField alignment="CENTER" layoutX="115.0" layoutY="230.0" prefHeight="74.0" prefWidth="64.0">
+      <TextField fx:id="thirdWord2" alignment="CENTER" layoutX="115.0" layoutY="230.0" prefHeight="74.0" prefWidth="64.0">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
@@ -109,7 +109,7 @@
             <Font name="Arial Bold" size="24.0" />
          </font>
       </TextField>
-      <TextField alignment="CENTER" layoutX="179.0" layoutY="230.0" prefHeight="74.0" prefWidth="64.0">
+      <TextField fx:id="thirdWord3" alignment="CENTER" layoutX="179.0" layoutY="230.0" prefHeight="74.0" prefWidth="64.0">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
@@ -117,7 +117,7 @@
             <Font name="Arial Bold" size="24.0" />
          </font>
       </TextField>
-      <TextField alignment="CENTER" layoutX="243.0" layoutY="230.0" prefHeight="74.0" prefWidth="64.0">
+      <TextField fx:id="thirdWord4" alignment="CENTER" layoutX="243.0" layoutY="230.0" prefHeight="74.0" prefWidth="64.0">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
@@ -125,7 +125,7 @@
             <Font name="Arial Bold" size="24.0" />
          </font>
       </TextField>
-      <TextField alignment="CENTER" layoutX="307.0" layoutY="230.0" prefHeight="74.0" prefWidth="64.0">
+      <TextField fx:id="thirdWord5" alignment="CENTER" layoutX="307.0" layoutY="230.0" prefHeight="74.0" prefWidth="64.0">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
@@ -133,7 +133,7 @@
             <Font name="Arial Bold" size="24.0" />
          </font>
       </TextField>
-      <TextField alignment="CENTER" layoutX="51.0" layoutY="311.0" prefHeight="74.0" prefWidth="64.0">
+      <TextField fx:id="fourthWord1" alignment="CENTER" layoutX="51.0" layoutY="311.0" prefHeight="74.0" prefWidth="64.0">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
@@ -141,7 +141,7 @@
             <Font name="Arial Bold" size="24.0" />
          </font>
       </TextField>
-      <TextField alignment="CENTER" layoutX="115.0" layoutY="311.0" prefHeight="74.0" prefWidth="64.0">
+      <TextField fx:id="fourthWord2" alignment="CENTER" layoutX="115.0" layoutY="311.0" prefHeight="74.0" prefWidth="64.0">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
@@ -149,7 +149,7 @@
             <Font name="Arial Bold" size="24.0" />
          </font>
       </TextField>
-      <TextField alignment="CENTER" layoutX="179.0" layoutY="311.0" prefHeight="74.0" prefWidth="64.0">
+      <TextField fx:id="fourthWord3" alignment="CENTER" layoutX="179.0" layoutY="311.0" prefHeight="74.0" prefWidth="64.0">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
@@ -157,7 +157,7 @@
             <Font name="Arial Bold" size="24.0" />
          </font>
       </TextField>
-      <TextField alignment="CENTER" layoutX="243.0" layoutY="311.0" prefHeight="74.0" prefWidth="64.0">
+      <TextField fx:id="fourthWord4" alignment="CENTER" layoutX="243.0" layoutY="311.0" prefHeight="74.0" prefWidth="64.0">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
@@ -165,7 +165,7 @@
             <Font name="Arial Bold" size="24.0" />
          </font>
       </TextField>
-      <TextField alignment="CENTER" layoutX="307.0" layoutY="311.0" prefHeight="74.0" prefWidth="64.0">
+      <TextField fx:id="fourthWord5" alignment="CENTER" layoutX="307.0" layoutY="311.0" prefHeight="74.0" prefWidth="64.0">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
@@ -173,7 +173,7 @@
             <Font name="Arial Bold" size="24.0" />
          </font>
       </TextField>
-      <TextField alignment="CENTER" layoutX="50.0" layoutY="392.0" prefHeight="74.0" prefWidth="64.0">
+      <TextField fx:id="fifthWord1" alignment="CENTER" layoutX="50.0" layoutY="392.0" prefHeight="74.0" prefWidth="64.0">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
@@ -181,7 +181,7 @@
             <Font name="Arial Bold" size="24.0" />
          </font>
       </TextField>
-      <TextField alignment="CENTER" layoutX="114.0" layoutY="392.0" prefHeight="74.0" prefWidth="64.0">
+      <TextField fx:id="fifthWord2" alignment="CENTER" layoutX="114.0" layoutY="392.0" prefHeight="74.0" prefWidth="64.0">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
@@ -189,7 +189,7 @@
             <Font name="Arial Bold" size="24.0" />
          </font>
       </TextField>
-      <TextField alignment="CENTER" layoutX="178.0" layoutY="392.0" prefHeight="74.0" prefWidth="64.0">
+      <TextField fx:id="fifthWord3" alignment="CENTER" layoutX="178.0" layoutY="392.0" prefHeight="74.0" prefWidth="64.0">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
@@ -197,7 +197,7 @@
             <Font name="Arial Bold" size="24.0" />
          </font>
       </TextField>
-      <TextField alignment="CENTER" layoutX="242.0" layoutY="392.0" prefHeight="74.0" prefWidth="64.0">
+      <TextField fx:id="fifthWord4" alignment="CENTER" layoutX="242.0" layoutY="392.0" prefHeight="74.0" prefWidth="64.0">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
@@ -205,7 +205,7 @@
             <Font name="Arial Bold" size="24.0" />
          </font>
       </TextField>
-      <TextField alignment="CENTER" layoutX="306.0" layoutY="392.0" prefHeight="74.0" prefWidth="64.0">
+      <TextField fx:id="fifthWord5" alignment="CENTER" layoutX="306.0" layoutY="392.0" prefHeight="74.0" prefWidth="64.0">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
@@ -213,7 +213,7 @@
             <Font name="Arial Bold" size="24.0" />
          </font>
       </TextField>
-      <TextField alignment="CENTER" layoutX="50.0" layoutY="473.0" prefHeight="74.0" prefWidth="64.0">
+      <TextField fx:id="sixthWord1" alignment="CENTER" layoutX="50.0" layoutY="473.0" prefHeight="74.0" prefWidth="64.0">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
@@ -221,7 +221,7 @@
             <Font name="Arial Bold" size="24.0" />
          </font>
       </TextField>
-      <TextField alignment="CENTER" layoutX="114.0" layoutY="473.0" prefHeight="74.0" prefWidth="64.0">
+      <TextField fx:id="sixthWord2" alignment="CENTER" layoutX="114.0" layoutY="473.0" prefHeight="74.0" prefWidth="64.0">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
@@ -229,7 +229,7 @@
             <Font name="Arial Bold" size="24.0" />
          </font>
       </TextField>
-      <TextField alignment="CENTER" layoutX="178.0" layoutY="473.0" prefHeight="74.0" prefWidth="64.0">
+      <TextField fx:id="sixthWord3" alignment="CENTER" layoutX="178.0" layoutY="473.0" prefHeight="74.0" prefWidth="64.0">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
@@ -237,7 +237,7 @@
             <Font name="Arial Bold" size="24.0" />
          </font>
       </TextField>
-      <TextField alignment="CENTER" layoutX="242.0" layoutY="473.0" prefHeight="74.0" prefWidth="64.0">
+      <TextField fx:id="sixthWord4" alignment="CENTER" layoutX="242.0" layoutY="473.0" prefHeight="74.0" prefWidth="64.0">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
@@ -245,7 +245,7 @@
             <Font name="Arial Bold" size="24.0" />
          </font>
       </TextField>
-      <TextField alignment="CENTER" layoutX="306.0" layoutY="473.0" prefHeight="74.0" prefWidth="64.0">
+      <TextField fx:id="sixthWord5" alignment="CENTER" layoutX="306.0" layoutY="473.0" prefHeight="74.0" prefWidth="64.0">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
