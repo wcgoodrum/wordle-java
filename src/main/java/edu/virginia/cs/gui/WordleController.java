@@ -9,6 +9,8 @@ import javafx.scene.control.Label;
 
 public class WordleController {
 
+    // new wordle game state
+    Wordle wordle = new WordleImplementation();
     @FXML
     private Button newGameButton;
     @FXML
@@ -18,7 +20,10 @@ public class WordleController {
     protected void buttons_initialize() {
         newGameButton.setVisible(false);
         endGameButton.setVisible(false);
-        // set to true if game is over
+        if (wordle.isGameOver()) {
+            newGameButton.setVisible(true);
+            endGameButton.setVisible(true);
+        }
     }
 
     @FXML
