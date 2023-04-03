@@ -19,6 +19,8 @@ public class WordleController {
     @FXML
     private Label playAgainText;
     @FXML
+    private Label invalidWordLabel;
+    @FXML
     private List<Label> LetterList;
 
     @FXML
@@ -28,6 +30,10 @@ public class WordleController {
             initializeEnd();
     }
 
+    @FXML
+    protected void invalidWordMessage() {
+        invalidWordLabel.setVisible(true);
+    }
     @FXML
     protected void initializeEnd() {
         playAgainText.setVisible(true);
