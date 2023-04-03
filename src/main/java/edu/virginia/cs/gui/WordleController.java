@@ -12,7 +12,6 @@ import javafx.stage.Stage;
 
 public class WordleController {
     Wordle game = new WordleImplementation();
-
     private int row = 0;
     private int col = 0;
 
@@ -33,11 +32,11 @@ public class WordleController {
             if (keyEvent.getCode() == KeyCode.BACK_SPACE && col > 0) {
                 col--;
                 getLetterLabel(row, col).setText("");
-
-            } else if (VALID_LETTERS.contains(keyEvent.getCode().getChar())) {
+                invalidWord.setVisible(false);
+            } else if (col<5 && VALID_LETTERS.contains(keyEvent.getCode().getChar())) {
                 getLetterLabel(row, col).setText(keyEvent.getCode().getChar());
 
-                if (col == 4) {
+                if (col >= 4) {
                     checkWord();
                 } else {
                     col++;
@@ -46,55 +45,25 @@ public class WordleController {
         }
     }
 
+    @FXML
+    private Label invalidWord;
     private void checkWord(){
         String guess = "";
         for(int i = 0; i < 5; i++){
             guess = guess.concat(getLetterLabel(row, i).getText());
         }
-        System.out.println(guess + ", "+col+", "+row);
 
         try{
             LetterResult[] result = game.submitGuess(guess);
             setLetterColors(result);
             row++;
             col=0;
-
-            if(game.isGameOver()){
-                gameOver();
-            }
+            if(game.isGameOver()){gameOver();}
 
         }catch(Exception IllegalWordException){
-            // display on dialogue label "thats not a valid word"
-            System.out.println("illegal word");
-            for(int i = 4; i >= 0; i--){
-                getLetterLabel(row, i).setText("");
-            }
-            col = 0;
+            invalidWord.setVisible(true);
+            col++;
         }
-
-
-        /* Warning: Pseudo.
-
-        submit word to wordle logic (this will actually be done with try catch block but im going to bed now gn")
-
-        if(!validword){
-
-            clear current row
-            col = 0;
-            display invalid word text at bottom
-
-        }else{
-
-            feed response to setLetterColors
-            if(gameover){
-                gameover();
-
-            }else{
-                row++;
-                col = 0;
-            }
-
-        */
     }
 
     private void setLetterColors(LetterResult[] result){
@@ -105,27 +74,33 @@ public class WordleController {
                 case GREEN -> getLetterLabel(row, i).setStyle("-fx-background-color: #4fdf73; -fx-text-fill: #FFFFFF");
             }
         }
-        // sets each letterLabel in current row to corresponding color enum
     }
 
+    @FXML
+    private Label titleText;
+    @FXML
+    private Label endCard;
     private void gameOver(){
-//        row = 5;
-//        col = 4;
-//
-//        display gameReplay button
-//        display gameClose button
-//        display endCard label
-//
-//        if (gamewon) {
-//            endCard.setText("Winner!");
-//        }else{
-//            endCard.setText("Answer:\n"+wordle.getcorrectword);
-//        }
+        titleText.setVisible(false);
+        endCard.setVisible(true);
+        gameReplay.setVisible(true);
+        gameClose.setVisible(true);
+
+        if (game.isWin()) {
+            endCard.setText("Congratulations!");
+        }else{
+            endCard.setText("Answer:\n"+game.getAnswer());
+        }
     }
 
     @FXML
     private Button gameReplay;
-    protected void handleReplayButton(){ // in fxml: onAction="#handleReplayButton"
+    @FXML
+    protected void handleReplayButton(){
+        titleText.setVisible(true);
+        endCard.setVisible(false);
+        gameReplay.setVisible(false);
+        gameClose.setVisible(false);
         row = 0;
         col = 0;
         initializeLetters();
@@ -134,11 +109,11 @@ public class WordleController {
 
     @FXML
     private Button gameClose;
-    protected void handleCloseButton(){ // in fxml: onAction="#handleCloseButton"
+    @FXML
+    protected void handleCloseButton(){
         Stage stage = (Stage) gameClose.getScene().getWindow();
         stage.close();
     }
-
 
 
     //  warning: this shit is fucking awful and i hate it and so will you
