@@ -49,7 +49,7 @@ public class WordleController {
         for(int i = 0; i < 5; i++){
             guess = guess.concat(getLetterLabel(row, i).getText());
         }
-        System.out.println(guess);
+        System.out.println(guess + ", "+col+", "+row);
 
         try{
             LetterResult[] result = game.submitGuess(guess);
@@ -57,7 +57,7 @@ public class WordleController {
             row++;
             col=0;
         }catch(Exception IllegalWordException){
-            // display "thats not a valid word"
+            // display on dialogue label "thats not a valid word"
             System.out.println("illegal word");
             for(int i = 4; i >= 0; i--){
                 getLetterLabel(row, i).setText("");
