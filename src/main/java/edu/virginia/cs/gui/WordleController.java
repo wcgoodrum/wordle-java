@@ -1,5 +1,7 @@
 package edu.virginia.cs.gui;
 
+import edu.virginia.cs.wordle.Wordle;
+import edu.virginia.cs.wordle.WordleImplementation;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -7,11 +9,13 @@ import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.stage.Stage;
 
-public class WordleController{
-    private static int row = 0;
-    private static int col = 0;
+public class WordleController {
+    private Wordle game = new WordleImplementation;
 
-    public void initializeLetters() {
+    private int row = 0;
+    private int col = 0;
+
+    private void initializeLetters() {
         for (int i = 0; i < 6; i++) {
             for (int j = 0; j < 5; j++) {
                 getLetterLabel(i, j).setText("");
@@ -87,7 +91,7 @@ public class WordleController{
 
     @FXML
     private Button gameReplay;
-    protected void handleReplayButton(){
+    protected void handleReplayButton(){ // in fxml: onAction="#handleReplayButton"
         row = 0;
         col = 0;
         initializeLetters();
@@ -96,7 +100,7 @@ public class WordleController{
 
     @FXML
     private Button gameClose;
-    protected void handleCloseButton(){
+    protected void handleCloseButton(){ // in fxml: onAction="#handleCloseButton"
         Stage stage = (Stage) gameClose.getScene().getWindow();
         stage.close();
     }
