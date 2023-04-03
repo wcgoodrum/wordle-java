@@ -48,6 +48,8 @@ public class WordleController {
     @FXML
     private Label invalidWord;
     private void checkWord(){
+        System.out.println("Answer is: "+game.getAnswer()); // for testing purposes
+
         String guess = "";
         for(int i = 0; i < 5; i++){
             guess = guess.concat(getLetterLabel(row, i).getText());
