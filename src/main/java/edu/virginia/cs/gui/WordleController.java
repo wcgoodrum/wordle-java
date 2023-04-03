@@ -11,9 +11,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 
 public class WordleController {
-
-    // new wordle game state
-    Wordle wordle = new WordleImplementation();
+    Wordle wordle;
     @FXML
     private Button newGameButton;
     @FXML
@@ -24,16 +22,21 @@ public class WordleController {
     private List<Label> LetterList;
 
     @FXML
-    protected void initializeEnd() {
-        if (wordle.isGameOver()) {
-            playAgainText.setVisible(true);
-            newGameButton.setVisible(true);
-            endGameButton.setVisible(true);
-        }
+    protected void playGame() {
+        wordle = new WordleImplementation();
+        if (wordle.isGameOver())
+            initializeEnd();
     }
 
     @FXML
-    protected void restartGame() {
+    protected void initializeEnd() {
+        playAgainText.setVisible(true);
+        newGameButton.setVisible(true);
+        endGameButton.setVisible(true);
+    }
+
+    @FXML
+    protected void restartGame(ActionEvent event) {
         // reset variables
     }
 
