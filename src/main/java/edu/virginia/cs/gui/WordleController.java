@@ -2,6 +2,7 @@ package edu.virginia.cs.gui;
 
 import edu.virginia.cs.wordle.Wordle;
 import edu.virginia.cs.wordle.WordleImplementation;
+import edu.virginia.cs.wordle.LetterResult;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -10,7 +11,7 @@ import javafx.scene.input.KeyEvent;
 import javafx.stage.Stage;
 
 public class WordleController {
-    private Wordle game = new WordleImplementation;
+    Wordle game = new WordleImplementation();
 
     private int row = 0;
     private int col = 0;
@@ -39,13 +40,32 @@ public class WordleController {
                 col++;
             } else if (row < 5) { // end of line reached, move to next word
                 checkWord();
-                row++;//REMOVE these when implementing checkWord
-                col = 0;//REMOVE these when implementing checkWord
             }
         }
     }
 
     private void checkWord(){
+        String guess = "";
+        for(int i = 0; i < 5; i++){
+            guess = guess.concat(getLetterLabel(row, i).getText());
+        }
+        System.out.println(guess);
+
+        try{
+            LetterResult[] result = game.submitGuess(guess);
+            setLetterColors(result);
+            row++;
+            col=0;
+        }catch(Exception IllegalWordException){
+            // display "thats not a valid word"
+            System.out.println("illegal word");
+            for(int i = 4; i >= 0; i--){
+                getLetterLabel(row, i).setText("");
+            }
+            col = 0;
+        }
+
+
         /* Warning: Pseudo.
 
         submit word to wordle logic (this will actually be done with try catch block but im going to bed now gn")
@@ -60,18 +80,7 @@ public class WordleController {
 
             feed response to setLetterColors
             if(gameover){
-                row = 5;
-                col = 4;
-
-                display gameReplay button
-                display gameClose button
-                display endCard label
-
-                if (gamewon) {
-                    endCard.setText("Winner!");
-                }else{
-                    endCard.setText("Answer:\n"+wordle.getcorrectword);
-                }
+                gameover();
 
             }else{
                 row++;
@@ -81,12 +90,30 @@ public class WordleController {
         */
     }
 
-    private void setLetterColors(/* will take in the enums that wordle logic produces */){
+    private void setLetterColors(LetterResult[] result){
+        for(int i = 0; i < 5; i++){
+            switch(result[i]){
+                case GRAY -> getLetterLabel(row, i).setStyle("-fx-background-color: #7e7e7e; -fx-text-fill: #FFFFFF");
+                case YELLOW -> getLetterLabel(row, i).setStyle("-fx-background-color: #ffe940; -fx-text-fill: #FFFFFF");
+                case GREEN -> getLetterLabel(row, i).setStyle("-fx-background-color: #4fdf73; -fx-text-fill: #FFFFFF");
+            }
+        }
         // sets each letterLabel in current row to corresponding color enum
     }
 
     private void gameOver(){
-
+//        row = 5;
+//        col = 4;
+//
+//        display gameReplay button
+//        display gameClose button
+//        display endCard label
+//
+//        if (gamewon) {
+//            endCard.setText("Winner!");
+//        }else{
+//            endCard.setText("Answer:\n"+wordle.getcorrectword);
+//        }
     }
 
     @FXML
@@ -95,7 +122,7 @@ public class WordleController {
         row = 0;
         col = 0;
         initializeLetters();
-        // re-initialize wordle object
+        game = new WordleImplementation();
     }
 
     @FXML
