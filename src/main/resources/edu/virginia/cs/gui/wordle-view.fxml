@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.util.ArrayList?>
-
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextArea?>
@@ -10,41 +8,131 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="420.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.virginia.cs.gui.WordleController">
    <children>
-      <TextArea editable="false" layoutX="113.0" layoutY="-9.0" prefHeight="125.0" prefWidth="224.0" style="-fx-border-color: white; -fx-background-color: white;" text="Wordle">
+      <TextArea editable="false" layoutX="113.0" layoutY="-9.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="125.0" prefWidth="224.0" style="-fx-border-color: white; -fx-background-color: white;" text="Wordle">
          <font>
             <Font name="Times New Roman Bold" size="44.0" />
          </font>
       </TextArea>
-      <Label fx:id="letter1" layoutX="51.0" layoutY="69.0" prefHeight="74.0" prefWidth="64.0" style="-fx-border-color: grey;" />
-      <Label fx:id="letter2" layoutX="114.0" layoutY="69.0" prefHeight="74.0" prefWidth="64.0" style="-fx-border-color: grey;" />
-      <Label fx:id="letter3" layoutX="177.0" layoutY="69.0" prefHeight="74.0" prefWidth="64.0" style="-fx-border-color: grey;" />
-      <Label fx:id="letter4" layoutX="240.0" layoutY="69.0" prefHeight="74.0" prefWidth="64.0" style="-fx-border-color: grey;" />
-      <Label fx:id="letter5" layoutX="303.0" layoutY="69.0" prefHeight="74.0" prefWidth="64.0" style="-fx-border-color: grey;" />
-      <Label fx:id="letter6" layoutX="51.0" layoutY="150.0" prefHeight="74.0" prefWidth="64.0" style="-fx-border-color: grey;" />
-      <Label fx:id="letter7" layoutX="114.0" layoutY="150.0" prefHeight="74.0" prefWidth="64.0" style="-fx-border-color: grey;" />
-      <Label fx:id="letter8" layoutX="177.0" layoutY="150.0" prefHeight="74.0" prefWidth="64.0" style="-fx-border-color: grey;" />
-      <Label fx:id="letter9" layoutX="240.0" layoutY="150.0" prefHeight="74.0" prefWidth="64.0" style="-fx-border-color: grey;" />
-      <Label fx:id="letter10" layoutX="303.0" layoutY="150.0" prefHeight="74.0" prefWidth="64.0" style="-fx-border-color: grey;" />
-      <Label fx:id="letter11" layoutX="50.0" layoutY="230.0" prefHeight="74.0" prefWidth="64.0" style="-fx-border-color: grey;" />
-      <Label fx:id="letter12" layoutX="113.0" layoutY="230.0" prefHeight="74.0" prefWidth="64.0" style="-fx-border-color: grey;" />
-      <Label fx:id="letter13" layoutX="176.0" layoutY="230.0" prefHeight="74.0" prefWidth="64.0" style="-fx-border-color: grey;" />
-      <Label fx:id="letter14" layoutX="239.0" layoutY="230.0" prefHeight="74.0" prefWidth="64.0" style="-fx-border-color: grey;" />
-      <Label fx:id="letter15" layoutX="302.0" layoutY="230.0" prefHeight="74.0" prefWidth="64.0" style="-fx-border-color: grey;" />
-      <Label fx:id="letter16" layoutX="50.0" layoutY="311.0" prefHeight="74.0" prefWidth="64.0" style="-fx-border-color: grey;" />
-      <Label fx:id="letter17" layoutX="113.0" layoutY="311.0" prefHeight="74.0" prefWidth="64.0" style="-fx-border-color: grey;" />
-      <Label fx:id="letter18" layoutX="176.0" layoutY="311.0" prefHeight="74.0" prefWidth="64.0" style="-fx-border-color: grey;" />
-      <Label fx:id="letter19" layoutX="239.0" layoutY="311.0" prefHeight="74.0" prefWidth="64.0" style="-fx-border-color: grey;" />
-      <Label fx:id="letter20" layoutX="302.0" layoutY="311.0" prefHeight="74.0" prefWidth="64.0" style="-fx-border-color: grey;" />
-      <Label fx:id="letter21" layoutX="51.0" layoutY="392.0" prefHeight="74.0" prefWidth="64.0" style="-fx-border-color: grey;" />
-      <Label fx:id="letter22" layoutX="114.0" layoutY="392.0" prefHeight="74.0" prefWidth="64.0" style="-fx-border-color: grey;" />
-      <Label fx:id="letter23" layoutX="177.0" layoutY="392.0" prefHeight="74.0" prefWidth="64.0" style="-fx-border-color: grey;" />
-      <Label fx:id="letter24" layoutX="240.0" layoutY="392.0" prefHeight="74.0" prefWidth="64.0" style="-fx-border-color: grey;" />
-      <Label fx:id="letter25" layoutX="303.0" layoutY="392.0" prefHeight="74.0" prefWidth="64.0" style="-fx-border-color: grey;" />
-      <Label fx:id="letter26" layoutX="51.0" layoutY="473.0" prefHeight="74.0" prefWidth="64.0" style="-fx-border-color: grey;" />
-      <Label fx:id="letter27" layoutX="114.0" layoutY="473.0" prefHeight="74.0" prefWidth="64.0" style="-fx-border-color: grey;" />
-      <Label fx:id="letter28" layoutX="177.0" layoutY="473.0" prefHeight="74.0" prefWidth="64.0" style="-fx-border-color: grey;" />
-      <Label fx:id="letter29" layoutX="240.0" layoutY="473.0" prefHeight="74.0" prefWidth="64.0" style="-fx-border-color: grey;" />
-      <Label fx:id="letter30" layoutX="303.0" layoutY="473.0" prefHeight="74.0" prefWidth="64.0" style="-fx-border-color: grey;" />
+      <Label fx:id="letter1" alignment="CENTER" layoutX="51.0" layoutY="69.0" prefHeight="74.0" prefWidth="64.0" style="-fx-border-color: grey;" textAlignment="CENTER">
+         <font>
+            <Font name="Times New Roman Bold" size="36.0" />
+         </font></Label>
+      <Label fx:id="letter2" alignment="CENTER" layoutX="114.0" layoutY="69.0" prefHeight="74.0" prefWidth="64.0" style="-fx-border-color: grey;" textAlignment="CENTER">
+         <font>
+            <Font name="Times New Roman Bold" size="36.0" />
+         </font></Label>
+      <Label fx:id="letter3" alignment="CENTER" layoutX="177.0" layoutY="69.0" prefHeight="74.0" prefWidth="64.0" style="-fx-border-color: grey;" textAlignment="CENTER">
+         <font>
+            <Font name="Times New Roman Bold" size="36.0" />
+         </font></Label>
+      <Label fx:id="letter4" alignment="CENTER" layoutX="240.0" layoutY="69.0" prefHeight="74.0" prefWidth="64.0" style="-fx-border-color: grey;" textAlignment="CENTER">
+         <font>
+            <Font name="Times New Roman Bold" size="36.0" />
+         </font></Label>
+      <Label fx:id="letter5" alignment="CENTER" layoutX="303.0" layoutY="69.0" prefHeight="74.0" prefWidth="64.0" style="-fx-border-color: grey;" textAlignment="CENTER">
+         <font>
+            <Font name="Times New Roman Bold" size="36.0" />
+         </font></Label>
+      <Label fx:id="letter6" alignment="CENTER" layoutX="51.0" layoutY="150.0" prefHeight="74.0" prefWidth="64.0" style="-fx-border-color: grey;" textAlignment="CENTER">
+         <font>
+            <Font name="Times New Roman Bold" size="36.0" />
+         </font></Label>
+      <Label fx:id="letter7" alignment="CENTER" layoutX="114.0" layoutY="150.0" prefHeight="74.0" prefWidth="64.0" style="-fx-border-color: grey;" textAlignment="CENTER">
+         <font>
+            <Font name="Times New Roman Bold" size="36.0" />
+         </font></Label>
+      <Label fx:id="letter8" alignment="CENTER" layoutX="177.0" layoutY="150.0" prefHeight="74.0" prefWidth="64.0" style="-fx-border-color: grey;" textAlignment="CENTER">
+         <font>
+            <Font name="Times New Roman Bold" size="36.0" />
+         </font></Label>
+      <Label fx:id="letter9" alignment="CENTER" layoutX="240.0" layoutY="150.0" prefHeight="74.0" prefWidth="64.0" style="-fx-border-color: grey;" textAlignment="CENTER">
+         <font>
+            <Font name="Times New Roman Bold" size="36.0" />
+         </font></Label>
+      <Label fx:id="letter10" alignment="CENTER" layoutX="303.0" layoutY="150.0" prefHeight="74.0" prefWidth="64.0" style="-fx-border-color: grey;" textAlignment="CENTER">
+         <font>
+            <Font name="Times New Roman Bold" size="36.0" />
+         </font></Label>
+      <Label fx:id="letter11" alignment="CENTER" layoutX="50.0" layoutY="230.0" prefHeight="74.0" prefWidth="64.0" style="-fx-border-color: grey;" textAlignment="CENTER">
+         <font>
+            <Font name="Times New Roman Bold" size="36.0" />
+         </font></Label>
+      <Label fx:id="letter12" alignment="CENTER" layoutX="113.0" layoutY="230.0" prefHeight="74.0" prefWidth="64.0" style="-fx-border-color: grey;" textAlignment="CENTER">
+         <font>
+            <Font name="Times New Roman Bold" size="36.0" />
+         </font></Label>
+      <Label fx:id="letter13" alignment="CENTER" layoutX="176.0" layoutY="230.0" prefHeight="74.0" prefWidth="64.0" style="-fx-border-color: grey;" textAlignment="CENTER">
+         <font>
+            <Font name="Times New Roman Bold" size="36.0" />
+         </font></Label>
+      <Label fx:id="letter14" alignment="CENTER" layoutX="239.0" layoutY="230.0" prefHeight="74.0" prefWidth="64.0" style="-fx-border-color: grey;" textAlignment="CENTER">
+         <font>
+            <Font name="Times New Roman Bold" size="36.0" />
+         </font></Label>
+      <Label fx:id="letter15" alignment="CENTER" layoutX="302.0" layoutY="230.0" prefHeight="74.0" prefWidth="64.0" style="-fx-border-color: grey;" textAlignment="CENTER">
+         <font>
+            <Font name="Times New Roman Bold" size="36.0" />
+         </font></Label>
+      <Label fx:id="letter16" alignment="CENTER" layoutX="50.0" layoutY="311.0" prefHeight="74.0" prefWidth="64.0" style="-fx-border-color: grey;" textAlignment="CENTER">
+         <font>
+            <Font name="Times New Roman Bold" size="36.0" />
+         </font></Label>
+      <Label fx:id="letter17" alignment="CENTER" layoutX="113.0" layoutY="311.0" prefHeight="74.0" prefWidth="64.0" style="-fx-border-color: grey;" textAlignment="CENTER">
+         <font>
+            <Font name="Times New Roman Bold" size="36.0" />
+         </font></Label>
+      <Label fx:id="letter18" alignment="CENTER" layoutX="176.0" layoutY="311.0" prefHeight="74.0" prefWidth="64.0" style="-fx-border-color: grey;" textAlignment="CENTER">
+         <font>
+            <Font name="Times New Roman Bold" size="36.0" />
+         </font></Label>
+      <Label fx:id="letter19" alignment="CENTER" layoutX="239.0" layoutY="311.0" prefHeight="74.0" prefWidth="64.0" style="-fx-border-color: grey;" textAlignment="CENTER">
+         <font>
+            <Font name="Times New Roman Bold" size="36.0" />
+         </font></Label>
+      <Label fx:id="letter20" alignment="CENTER" layoutX="302.0" layoutY="311.0" prefHeight="74.0" prefWidth="64.0" style="-fx-border-color: grey;" textAlignment="CENTER">
+         <font>
+            <Font name="Times New Roman Bold" size="36.0" />
+         </font></Label>
+      <Label fx:id="letter21" alignment="CENTER" layoutX="51.0" layoutY="392.0" prefHeight="74.0" prefWidth="64.0" style="-fx-border-color: grey;" textAlignment="CENTER">
+         <font>
+            <Font name="Times New Roman Bold" size="36.0" />
+         </font></Label>
+      <Label fx:id="letter22" alignment="CENTER" layoutX="114.0" layoutY="392.0" prefHeight="74.0" prefWidth="64.0" style="-fx-border-color: grey;" textAlignment="CENTER">
+         <font>
+            <Font name="Times New Roman Bold" size="36.0" />
+         </font></Label>
+      <Label fx:id="letter23" alignment="CENTER" layoutX="177.0" layoutY="392.0" prefHeight="74.0" prefWidth="64.0" style="-fx-border-color: grey;" textAlignment="CENTER">
+         <font>
+            <Font name="Times New Roman Bold" size="36.0" />
+         </font></Label>
+      <Label fx:id="letter24" alignment="CENTER" layoutX="240.0" layoutY="392.0" prefHeight="74.0" prefWidth="64.0" style="-fx-border-color: grey;" textAlignment="CENTER">
+         <font>
+            <Font name="Times New Roman Bold" size="36.0" />
+         </font></Label>
+      <Label fx:id="letter25" alignment="CENTER" layoutX="303.0" layoutY="392.0" prefHeight="74.0" prefWidth="64.0" style="-fx-border-color: grey;" textAlignment="CENTER">
+         <font>
+            <Font name="Times New Roman Bold" size="36.0" />
+         </font></Label>
+      <Label fx:id="letter26" alignment="CENTER" layoutX="51.0" layoutY="473.0" prefHeight="74.0" prefWidth="64.0" style="-fx-border-color: grey;" textAlignment="CENTER">
+         <font>
+            <Font name="Times New Roman Bold" size="36.0" />
+         </font></Label>
+      <Label fx:id="letter27" alignment="CENTER" layoutX="114.0" layoutY="473.0" prefHeight="74.0" prefWidth="64.0" style="-fx-border-color: grey;" textAlignment="CENTER">
+         <font>
+            <Font name="Times New Roman Bold" size="36.0" />
+         </font></Label>
+      <Label fx:id="letter28" alignment="CENTER" layoutX="177.0" layoutY="473.0" prefHeight="74.0" prefWidth="64.0" style="-fx-border-color: grey;" textAlignment="CENTER">
+         <font>
+            <Font name="Times New Roman Bold" size="36.0" />
+         </font></Label>
+      <Label fx:id="letter29" alignment="CENTER" layoutX="240.0" layoutY="473.0" prefHeight="74.0" prefWidth="64.0" style="-fx-border-color: grey;" textAlignment="CENTER">
+         <font>
+            <Font name="Times New Roman Bold" size="36.0" />
+         </font></Label>
+      <Label fx:id="letter30" alignment="CENTER" layoutX="303.0" layoutY="473.0" prefHeight="74.0" prefWidth="64.0" style="-fx-border-color: grey;" textAlignment="CENTER">
+         <font>
+            <Font name="Times New Roman Bold" size="36.0" />
+         </font></Label>
       <Label fx:id="playAgainText" layoutX="95.0" layoutY="220.0" text="Would you like to play again?" textAlignment="CENTER" visible="false">
          <font>
             <Font name="Times New Roman Bold" size="18.0" />
