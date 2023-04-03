@@ -10,7 +10,7 @@ public class WordleApplication extends Application {
     public void start(Stage stage) throws Exception {
         FXMLLoader fxmlLoader = new FXMLLoader(WordleApplication.class.getResource("wordle-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load()); // creates a scene with the pane and defines size of scene
-        stage.setTitle("Wordel(TM) Application");
+        stage.setTitle("Wordle Application");
         stage.setScene(scene); // sets the stage to the scene we made
         stage.show(); // displays the stage as the window
     }
