@@ -29,17 +29,19 @@ public class WordleController {
     protected void keyHandler(KeyEvent keyEvent) {
         String VALID_LETTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-        if (keyEvent.getCode() == KeyCode.BACK_SPACE && col > 0) {
-            col--;
-            getLetterLabel(row, col).setText("");
+        if(!game.isGameOver()) {
+            if (keyEvent.getCode() == KeyCode.BACK_SPACE && col > 0) {
+                col--;
+                getLetterLabel(row, col).setText("");
 
-        } else if (VALID_LETTERS.contains(keyEvent.getCode().getChar())) {
-            getLetterLabel(row, col).setText(keyEvent.getCode().getChar());
+            } else if (VALID_LETTERS.contains(keyEvent.getCode().getChar())) {
+                getLetterLabel(row, col).setText(keyEvent.getCode().getChar());
 
-            if (col < 4) {
-                col++;
-            } else if (row < 5) { // end of line reached, move to next word
-                checkWord();
+                if (col == 4) {
+                    checkWord();
+                } else {
+                    col++;
+                }
             }
         }
     }
@@ -56,6 +58,11 @@ public class WordleController {
             setLetterColors(result);
             row++;
             col=0;
+
+            if(game.isGameOver()){
+                gameOver();
+            }
+
         }catch(Exception IllegalWordException){
             // display on dialogue label "thats not a valid word"
             System.out.println("illegal word");
