@@ -2,6 +2,9 @@ package edu.virginia.cs.gui;
 
 import edu.virginia.cs.wordle.Wordle;
 import edu.virginia.cs.wordle.WordleImplementation;
+
+import java.util.List;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -15,12 +18,15 @@ public class WordleController {
     private Button newGameButton;
     @FXML
     private Button endGameButton;
+    @FXML
+    private Label playAgainText;
+    @FXML
+    private List<Label> LetterList;
 
     @FXML
-    protected void buttons_initialize() {
-        newGameButton.setVisible(false);
-        endGameButton.setVisible(false);
+    protected void initializeEnd() {
         if (wordle.isGameOver()) {
+            playAgainText.setVisible(true);
             newGameButton.setVisible(true);
             endGameButton.setVisible(true);
         }
@@ -35,5 +41,4 @@ public class WordleController {
     protected void endGame(ActionEvent event){
         javafx.application.Platform.exit();
     }
-
 }
