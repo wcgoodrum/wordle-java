@@ -196,7 +196,7 @@
             <Font name="System Bold" size="14.0" />
          </font>
       </Button>
-      <Label fx:id="invalidWord" alignment="CENTER" layoutX="117.0" layoutY="453.0" prefHeight="24.0" prefWidth="139.0" text="This word is invalid. Please enter a valid word." visible="false">
+      <Label fx:id="invalidWord" alignment="CENTER" layoutX="31.0" layoutY="453.0" prefHeight="24.0" prefWidth="313.0" text="This word is invalid. Please enter a valid word." visible="false">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
