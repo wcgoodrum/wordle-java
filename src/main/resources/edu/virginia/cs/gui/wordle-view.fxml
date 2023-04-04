@@ -185,7 +185,7 @@
             <Font name="SansSerif Bold" size="42.0" />
          </font>
       </Label>
-      <TextField fx:id="daTextFieldFX" layoutY="-24.0" onKeyPressed="#keyHandler" onKeyTyped="#keyHandler" visible="true" />
+      <TextField fx:id="dummyInput" layoutY="-24.0" onKeyPressed="#keyHandler" onKeyTyped="#keyHandler" />
       <Label fx:id="endCard" layoutX="31.0" layoutY="6.0" prefHeight="60.0" prefWidth="183.0" text="Congratulations!" visible="false">
          <font>
             <Font name="SansSerif Bold" size="16.0" />

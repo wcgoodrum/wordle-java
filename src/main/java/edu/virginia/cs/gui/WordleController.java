@@ -6,6 +6,7 @@ import edu.virginia.cs.wordle.LetterResult;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.stage.Stage;
@@ -25,6 +26,8 @@ public class WordleController {
     }
 
     @FXML
+    private TextField dummyInput;
+    @FXML
     protected void keyHandler(KeyEvent keyEvent) {
         String VALID_LETTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
@@ -38,6 +41,7 @@ public class WordleController {
 
                 if (col >= 4) {
                     checkWord();
+                    dummyInput.setText("");
                 } else {
                     col++;
                 }
@@ -48,8 +52,7 @@ public class WordleController {
     @FXML
     private Label invalidWord;
     private void checkWord(){
-        System.out.println("Answer is: "+game.getAnswer()); // for testing purposes
-
+//        System.out.println("Answer is: "+game.getAnswer()); // for testing purposes
         String guess = "";
         for(int i = 0; i < 5; i++){
             guess = guess.concat(getLetterLabel(row, i).getText());
@@ -117,8 +120,7 @@ public class WordleController {
         stage.close();
     }
 
-
-    //  warning: this shit is fucking awful and i hate it and so will you
+    // pure and utter loathing for the following:
     @FXML private Label letter00;@FXML private Label letter01;@FXML private Label letter02;@FXML private Label letter03;@FXML private Label letter04;
     @FXML private Label letter10;@FXML private Label letter11;@FXML private Label letter12;@FXML private Label letter13;@FXML private Label letter14;
     @FXML private Label letter20;@FXML private Label letter21;@FXML private Label letter22;@FXML private Label letter23;@FXML private Label letter24;
