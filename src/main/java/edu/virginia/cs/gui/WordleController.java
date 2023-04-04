@@ -89,9 +89,9 @@ public class WordleController {
         gameClose.setVisible(true);
 
         if (game.isWin()) {
-            endCard.setText("Congratulations! You won!\nWould you like to play again?");
+            endCard.setText("Congratulations!\nPlay again?");
         }else{
-            endCard.setText("You lost. The answer was\n" + game.getAnswer() + ". Would you like to\nplay again?");
+            endCard.setText("Sorry, the word was\n" + game.getAnswer() + ". Play again?");
         }
     }
 

@@ -30,180 +30,180 @@
          <children>
             <Label fx:id="letter00" alignment="CENTER" contentDisplay="CENTER" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #e0e0e0;" textAlignment="CENTER">
                <font>
-                  <Font size="36.0" />
+                  <Font name="SansSerif Bold" size="32.0" />
                </font>
             </Label>
             <Label fx:id="letter01" alignment="CENTER" contentDisplay="CENTER" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #e0e0e0;" textAlignment="CENTER" GridPane.columnIndex="1">
                <font>
-                  <Font size="36.0" />
+                  <Font name="SansSerif Bold" size="32.0" />
                </font>
             </Label>
             <Label fx:id="letter02" alignment="CENTER" contentDisplay="CENTER" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #e0e0e0;" textAlignment="CENTER" GridPane.columnIndex="2">
                <font>
-                  <Font size="36.0" />
+                  <Font name="SansSerif Bold" size="32.0" />
                </font>
             </Label>
             <Label fx:id="letter03" alignment="CENTER" contentDisplay="CENTER" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #e0e0e0;" textAlignment="CENTER" GridPane.columnIndex="3">
                <font>
-                  <Font size="36.0" />
+                  <Font name="SansSerif Bold" size="32.0" />
                </font>
             </Label>
             <Label fx:id="letter04" alignment="CENTER" contentDisplay="CENTER" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #e0e0e0;" textAlignment="CENTER" GridPane.columnIndex="4">
                <font>
-                  <Font size="36.0" />
+                  <Font name="SansSerif Bold" size="34.0" />
                </font>
             </Label>
             <Label fx:id="letter10" alignment="CENTER" contentDisplay="CENTER" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #e0e0e0;" textAlignment="CENTER" GridPane.rowIndex="1">
                <font>
-                  <Font size="36.0" />
+                  <Font name="SansSerif Bold" size="32.0" />
                </font>
             </Label>
             <Label fx:id="letter11" alignment="CENTER" contentDisplay="CENTER" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #e0e0e0;" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <font>
-                  <Font size="36.0" />
+                  <Font name="SansSerif Bold" size="32.0" />
                </font>
             </Label>
             <Label fx:id="letter12" alignment="CENTER" contentDisplay="CENTER" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #e0e0e0;" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="1">
                <font>
-                  <Font size="36.0" />
+                  <Font name="SansSerif Bold" size="32.0" />
                </font>
             </Label>
             <Label fx:id="letter13" alignment="CENTER" contentDisplay="CENTER" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #e0e0e0;" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="1">
                <font>
-                  <Font size="36.0" />
+                  <Font name="SansSerif Bold" size="32.0" />
                </font>
             </Label>
             <Label fx:id="letter14" alignment="CENTER" contentDisplay="CENTER" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #e0e0e0;" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="1">
                <font>
-                  <Font size="36.0" />
+                  <Font name="SansSerif Bold" size="32.0" />
                </font>
             </Label>
             <Label fx:id="letter20" alignment="CENTER" contentDisplay="CENTER" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #e0e0e0;" textAlignment="CENTER" GridPane.rowIndex="2">
                <font>
-                  <Font size="36.0" />
+                  <Font name="SansSerif Bold" size="32.0" />
                </font>
             </Label>
             <Label fx:id="letter21" alignment="CENTER" contentDisplay="CENTER" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #e0e0e0;" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2">
                <font>
-                  <Font size="36.0" />
+                  <Font name="SansSerif Bold" size="32.0" />
                </font>
             </Label>
             <Label fx:id="letter22" alignment="CENTER" contentDisplay="CENTER" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #e0e0e0;" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="2">
                <font>
-                  <Font size="36.0" />
+                  <Font name="SansSerif Bold" size="32.0" />
                </font>
             </Label>
             <Label fx:id="letter23" alignment="CENTER" contentDisplay="CENTER" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #e0e0e0;" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="2">
                <font>
-                  <Font size="36.0" />
+                  <Font name="SansSerif Bold" size="32.0" />
                </font>
             </Label>
             <Label fx:id="letter24" alignment="CENTER" contentDisplay="CENTER" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #e0e0e0;" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="2">
                <font>
-                  <Font size="36.0" />
+                  <Font name="SansSerif Bold" size="32.0" />
                </font>
             </Label>
             <Label fx:id="letter30" alignment="CENTER" contentDisplay="CENTER" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #e0e0e0;" textAlignment="CENTER" GridPane.rowIndex="3">
                <font>
-                  <Font size="36.0" />
+                  <Font name="SansSerif Bold" size="32.0" />
                </font>
             </Label>
             <Label fx:id="letter31" alignment="CENTER" contentDisplay="CENTER" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #e0e0e0;" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3">
                <font>
-                  <Font size="36.0" />
+                  <Font name="SansSerif Bold" size="32.0" />
                </font>
             </Label>
             <Label fx:id="letter32" alignment="CENTER" contentDisplay="CENTER" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #e0e0e0;" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="3">
                <font>
-                  <Font size="36.0" />
+                  <Font name="SansSerif Bold" size="32.0" />
                </font>
             </Label>
             <Label fx:id="letter33" alignment="CENTER" contentDisplay="CENTER" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #e0e0e0;" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="3">
                <font>
-                  <Font size="36.0" />
+                  <Font name="SansSerif Bold" size="32.0" />
                </font>
             </Label>
             <Label fx:id="letter34" alignment="CENTER" contentDisplay="CENTER" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #e0e0e0;" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="3">
                <font>
-                  <Font size="36.0" />
+                  <Font name="SansSerif Bold" size="32.0" />
                </font>
             </Label>
             <Label fx:id="letter40" alignment="CENTER" contentDisplay="CENTER" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #e0e0e0;" textAlignment="CENTER" GridPane.rowIndex="4">
                <font>
-                  <Font size="36.0" />
+                  <Font name="SansSerif Bold" size="32.0" />
                </font>
             </Label>
             <Label fx:id="letter41" alignment="CENTER" contentDisplay="CENTER" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #e0e0e0;" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="4">
                <font>
-                  <Font size="36.0" />
+                  <Font name="SansSerif Bold" size="32.0" />
                </font>
             </Label>
             <Label fx:id="letter42" alignment="CENTER" contentDisplay="CENTER" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #e0e0e0;" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="4">
                <font>
-                  <Font size="36.0" />
+                  <Font name="SansSerif Bold" size="32.0" />
                </font>
             </Label>
             <Label fx:id="letter43" alignment="CENTER" contentDisplay="CENTER" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #e0e0e0;" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="4">
                <font>
-                  <Font size="36.0" />
+                  <Font name="SansSerif Bold" size="32.0" />
                </font>
             </Label>
             <Label fx:id="letter44" alignment="CENTER" contentDisplay="CENTER" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #e0e0e0;" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="4">
                <font>
-                  <Font size="36.0" />
+                  <Font name="SansSerif Bold" size="32.0" />
                </font>
             </Label>
             <Label fx:id="letter50" alignment="CENTER" contentDisplay="CENTER" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #e0e0e0;" textAlignment="CENTER" GridPane.rowIndex="5">
                <font>
-                  <Font size="36.0" />
+                  <Font name="SansSerif Bold" size="32.0" />
                </font>
             </Label>
             <Label fx:id="letter51" alignment="CENTER" contentDisplay="CENTER" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #e0e0e0;" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="5">
                <font>
-                  <Font size="36.0" />
+                  <Font name="SansSerif Bold" size="32.0" />
                </font>
             </Label>
             <Label fx:id="letter52" alignment="CENTER" contentDisplay="CENTER" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #e0e0e0;" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="5">
                <font>
-                  <Font size="36.0" />
+                  <Font name="SansSerif Bold" size="32.0" />
                </font>
             </Label>
             <Label fx:id="letter53" alignment="CENTER" contentDisplay="CENTER" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #e0e0e0;" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="5">
                <font>
-                  <Font size="36.0" />
+                  <Font name="SansSerif Bold" size="32.0" />
                </font>
             </Label>
             <Label fx:id="letter54" alignment="CENTER" contentDisplay="CENTER" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #e0e0e0;" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="5">
                <font>
-                  <Font size="36.0" />
+                  <Font name="SansSerif Bold" size="32.0" />
                </font>
             </Label>
          </children>
       </GridPane>
-      <Label fx:id="titleText" alignment="CENTER" layoutX="86.0" layoutY="2.0" prefHeight="65.0" prefWidth="200.0" text="WORDLE" textAlignment="CENTER">
+      <Label fx:id="titleText" alignment="CENTER" layoutX="77.0" layoutY="3.0" prefHeight="65.0" prefWidth="218.0" text="WORDLE" textAlignment="CENTER">
          <font>
-            <Font name="System Bold" size="44.0" />
+            <Font name="SansSerif Bold" size="42.0" />
          </font>
       </Label>
       <TextField fx:id="daTextFieldFX" layoutY="-24.0" onKeyPressed="#keyHandler" onKeyTyped="#keyHandler" visible="true" />
-      <Label fx:id="endCard" alignment="CENTER" layoutX="91.0" layoutY="5.0" prefHeight="60.0" prefWidth="190.0" text="Congratulations! You won Wordle! Would you like to play again?" textAlignment="CENTER" visible="false">
+      <Label fx:id="endCard" layoutX="31.0" layoutY="6.0" prefHeight="60.0" prefWidth="183.0" text="Congratulations!" visible="false">
          <font>
-            <Font name="System Bold" size="11.0" />
+            <Font name="SansSerif Bold" size="16.0" />
          </font>
       </Label>
-      <Button fx:id="gameReplay" alignment="CENTER" contentDisplay="CENTER" layoutX="30.0" layoutY="20.0" mnemonicParsing="false" onAction="#handleReplayButton" prefHeight="28.0" prefWidth="67.0" text="Yes" visible="false">
+      <Button fx:id="gameReplay" alignment="CENTER" contentDisplay="CENTER" layoutX="225.0" layoutY="22.0" mnemonicParsing="false" onAction="#handleReplayButton" prefHeight="25.0" prefWidth="46.0" text="Yes" visible="false">
          <font>
-            <Font name="System Bold" size="14.0" />
+            <Font name="SansSerif Bold" size="14.0" />
          </font>
       </Button>
-      <Button fx:id="gameClose" alignment="CENTER" contentDisplay="CENTER" layoutX="275.0" layoutY="20.0" mnemonicParsing="false" onAction="#handleCloseButton" prefHeight="18.0" prefWidth="67.0" text="No" visible="false">
+      <Button fx:id="gameClose" alignment="CENTER" contentDisplay="CENTER" layoutX="289.0" layoutY="22.0" mnemonicParsing="false" onAction="#handleCloseButton" prefHeight="25.0" prefWidth="46.0" text="No" visible="false">
          <font>
-            <Font name="System Bold" size="14.0" />
+            <Font name="SansSerif Bold" size="14.0" />
          </font>
       </Button>
-      <Label fx:id="invalidWord" alignment="CENTER" layoutX="31.0" layoutY="453.0" prefHeight="24.0" prefWidth="313.0" text="This word is invalid. Please enter a valid word." visible="false">
+      <Label fx:id="invalidWord" alignment="CENTER" contentDisplay="CENTER" layoutX="31.0" layoutY="453.0" prefHeight="24.0" prefWidth="313.0" text="Invalid Word" visible="false">
          <font>
-            <Font name="System Bold" size="14.0" />
+            <Font name="SansSerif Bold" size="16.0" />
          </font>
       </Label>
    </children>
